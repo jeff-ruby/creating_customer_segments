@@ -12250,9 +12250,9 @@ Chosen samples of wholesale customers dataset:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>回答:</strong><br>
-样本0:对牛奶/杂货/清洁纸的需求较大，猜测可能是一家零售商。<br>
-样本1:对生鲜的需求相对较大，可能是一家餐馆。<br>
-样本2:除了对牛奶/杂货/清洁纸有不少的需求，对生鲜需求也很大，可能是一家综合超市。</p>
+样本0:在 Milk/Grocery/Detergents_Paper/Delicatessen 上的开销，远远超过各自对应的mean和Q3；而在 Fresh/Frozen 上的开销则小于Q1或小于mean。这家客户对杂货类的产品需求非常大，猜测可能是一家零售商。</p>
+<p>样本1:在 Fresh 上的开销大于mean和Q2，在 Detergents_Paper 上的开销大于Q2而小于mean；在 Milk/Grocery/Delicatessen 上的开销都小于mean和Q2。说明这家客户对生鲜类产品的需求相对较大，猜测可能是一家餐馆。</p>
+<p>样本2:在 Milk/Grocery/Detergents_Paper/Delicatessen 上的开销，超过各自对应的mean，跟Q3差不多水平；另外，在 Fresh 上的开销远大于Q3以及mean。说明这家客户除了对杂货类产品有不小的需求外，对生鲜也有更大的需求，可能是一家中大型的综合超市。</p>
 
 </div>
 </div>
@@ -19817,10 +19817,10 @@ HQxMkiRJktTBwCRJkiRJHf4NkJubuLwgZs8AAAAASUVORK5CYII=
 <p><strong>回答:</strong><br>
 前两个主成分总和：0.7270<br>
 前四个主成分总和：0.9288</p>
-<p>对于第一个主成分，它的增长主要由 Detergents_Paper,Grocery,Milk 的减少决定，其中与Detergents_Paper的相关度最高（-0.7641），该主成分主要反映的是上述三个特征的变化。</p>
-<p>对于第二个主成分，它的增长主要由 Frozen,Fresh,Delicatessen 的增长决定，其中与 Frozen 的相关度最高（0.6393），该主成分主要反映的是上述三个特征的变化。</p>
-<p>对于第三个主成分，它的增长主要由 Fresh 的增长与 Delicatessen 的减少决定，该主成分主要反映的是上述两个特征的变化。</p>
-<p>对于第四个主成分，它的增长主要由 Frozen 的减少与 Delicatessen,Fresh 的增长决定，该主成分主要反映的是上述三个特征的变化。</p>
+<p>对于第一个主成分，它的增长主要由 Detergents_Paper,Grocery,Milk 的减少决定，其中与Detergents_Paper的相关度最高（-0.7641），该主成分主要反映的是上述三个特征的变化。这些特征对应日常食品、杂货的开销，因此推测该主成分代表零售类的客户。</p>
+<p>对于第二个主成分，它的增长主要由 Frozen,Fresh,Delicatessen 的增长决定，其中与 Frozen 的相关度最高（0.6293），该主成分主要反映的是上述三个特征的变化。这些特征对应生鲜、熟食、冷冻食品的开销，因此推测该主成分代表餐饮类的客户。</p>
+<p>对于第三个主成分，它的增长主要由 Fresh 的减少与 Delicatessen 的增长决定，该主成分主要反映的是上述两个特征的变化。其中，生鲜的权重最高，因此推测该主成分代表餐饮类的客户。</p>
+<p>对于第四个主成分，它的增长主要由 Frozen 的减少与 Delicatessen,Fresh 的增长决定，该主成分主要反映的是上述三个特征的变化。其中，冷冻食品的权重最高，因此推测该主成分代表餐饮类的客户。</p>
 
 </div>
 </div>
